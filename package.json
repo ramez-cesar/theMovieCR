@@ -1,0 +1,20 @@
+{
+  "name": "themoviecr",
+  "version": "1.0.0",
+  "description": "The Movie CR is a project that shows the premieres of movies in theaters and series platforms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramez-cesar/theMovieCR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramez-cesar/theMovieCR/issues"
+  },
+  "homepage": "https://github.com/ramez-cesar/theMovieCR#readme"
+}
