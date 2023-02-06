@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movies CR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" sizes="32x32" href="../src/images/cr_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/style.css">
+</head>
+<body>
+    <header>
+        <section class="header--name-site">
+            <h1>The Movie CR</h1>
+        </section>
+
+        <section class="header--language-container">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="world-icon icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
+                    <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
+                    <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+                    <path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                 </svg>
+            </span>
+            <select name="language" id="language_site">
+                <option value="spanish" selected>Español</option>
+                <option value="english">Inglés</option>
+            </select>
+        </section>
+    </header>
+
+    <main>
+        <div class="main-view-container">
+            <section class="main--slogan-container">
+                <h2>Películas, series y mucho más.</h2>
+                <p>Disfruta donde quieras, cuando quieras.</p>
+            </section>
+    
+            <section class="main--search-container">
+                <form class="search--container">
+                    <input type="text" class="search-movie-main" placeholder="Buscar película o series..." autocomplete="off">
+                    <button id="btn_search_movie_main">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="search-icon icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                         </svg>
+                    </button>
+                </form>
+            </section>
+            
+            <section class="main--trends-container">
+                <h3>Tendencias</h3>
+                <div class="trends-container--movies">
+                </div>
+                <div class="trends-container--button">
+                    <button id="btn_show_trends">Ver más</button>
+                </div>
+            </section>
+        </div>
+            
+            <section class="main--category-container">
+                <h3>Categorías</h3>
+                <div class="category-container">
+                </div>
+            </section>
+        <!-- </div> -->
+
+        <!-- ========================= Actions with Single Page Aplications ========================= -->
+
+        <section class="SPA-container--search-movie inactive">
+            <div class="main--search-container">
+                <form class="search--container">
+                    <input type="text" class="search-movie-spa" placeholder="Buscar película o series..." autocomplete="off">
+                    <button id="btn_search_movie_spa">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="search-icon icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                         </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="SPA--search-movie">
+            </div>
+        </section>
+
+        <section class="SPA-container--movie-list inactive">
+            <h3>Trending movies</h3>
+            <div class="SPA--movie-list">
+            </div>
+        </section>
+
+        <section class="SPA-container--movie-details inactive">
+            <article>
+                <img class="movie-poster">
+                <h3 class="movie-title"></h3>
+                <div class="movie-details--data">
+                    <span>⭐</span>
+                    <p class="movie-rating"></p>
+                    <p class="movie-date"></p>
+                </div>
+                <div class="movie-category">
+                </div>
+                <p class="movie-description"></p>
+            </article>
+            <article class="SPA-similar-movies--container">
+                <h3>Películas similares</h3>
+                <div class="SPA--similar-movies">
+                </div>
+            </article>
+        </section>
+
+        <section class="SPA-container--movies-by-category inactive">
+            <h3 class="SPA--category-name"></h3>
+            <div class="SPA--movies-by-category">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer--social-media">
+            <a target="_blank" href="https://twitter.com/ramez_cesar">Twitter</a>
+            <a target="_blank" href="https://github.com/ramez-cesar">Github</a>
+            <a target="_blank" href="https://codepen.io/ramez-cesar">Codepen</a>
+            <a target="_blank" href="mailto:cesarramez8@gmail.com">Contact</a>
+        </section>
+
+        <section class="footer--author">
+            <h3>César Ramez</h3>
+            <img src="../src/images/logo.png" alt="logo author">
+        </section>
+
+        <p>Copyright © 2023</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../src/utils/nodes.js"></script>
+    <script src="../src/utils/secrets.js"></script>
+    <script src="../src/index.js"></script>
+    <script src="../src/utils/navigation.js"></script>
+</body>
+</html>
