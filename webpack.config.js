@@ -27,7 +27,14 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader,
                     'css-loader'
                 ]
-            }
+            },
+            {
+                test: /\.woff2$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[hash][ext]'
+                }
+            },
         ]
     },
     plugins: [
