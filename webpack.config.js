@@ -8,10 +8,14 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
-        clean: true
+        clean: true,
+        assetModuleFilename: 'assets/images/[hash][ext][query]'
     }, 
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        alias: {
+            Image: path.resolve(__dirname, 'src/images/')
+        }
     },
     module: {
         rules: [
@@ -35,6 +39,10 @@ module.exports = {
                     filename: 'assets/fonts/[hash][ext]'
                 }
             },
+            {
+                test: /\.(png|svg|jpg|jpeg)$/i,
+                type: 'asset/resource'
+            }
         ]
     },
     plugins: [
