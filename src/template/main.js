@@ -1,5 +1,6 @@
 import { getTrendingMoviesPreview, getCategoryMovies, getMovieSearch, getTrendingMovies, getMoviesByCategory, getMovieDetails, getMovieDetailsSimilar } from "../utils/requests.js"
 
+import logo from "Image/logo.png"
 
 async function Template() {
     const viewMian = `<header>
@@ -123,7 +124,7 @@ async function Template() {
     
         <section class="footer--author">
             <h3>César Ramez</h3>
-            <img src="../src/images/logo.png" alt="logo author">
+            <img src="${logo}" alt="logo author">
         </section>
     
         <p>Copyright © 2023</p>
