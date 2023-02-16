@@ -4,8 +4,8 @@
   "description": "The Movie CR is a project that shows the premieres of movies in theaters and series platforms.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack --config webpack.config.dev.js",
     "start": "webpack serve --config webpack.config.dev.js"
   },
   "repository": {
