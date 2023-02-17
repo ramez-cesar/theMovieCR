@@ -274,6 +274,11 @@ main .category {
     border: 1px solid var(--light-brown);
     border-radius: 8px;
     cursor: pointer;
+    transition: 1s;
+}
+
+main .category:hover {
+    background-color: #C1A57B;
 }
 
 main .category p {
