@@ -1,4 +1,5 @@
 export { createSkeletons, getMovies, getMovieCategory }
+import imageNotFound from "Image/image-not-found.png"
 
 
 // Function that creates skeletons
@@ -36,6 +37,10 @@ function getMovies(container, moviesList, { leazyLoad = false, titleMovie = fals
         
         img.addEventListener('click', () => {
             location.hash = `#movie=${movie.id}`
+        })
+
+        img.addEventListener('error', () => {
+            img.setAttribute('src', imageNotFound)
         })
 
         if (titleMovie == false) {
